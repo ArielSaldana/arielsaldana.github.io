@@ -19,6 +19,7 @@ passwd = "password"
 ```
 In order to alter the bot's functionality you must change the code in main.py. There are a few functions that handle data, such as:
 
+
 ```python
 #getters
 
@@ -33,6 +34,7 @@ parser.sendGroupMessage('groupID', 'message')
 parser.sendPrivateMessage('userID', 'message')
 
 ```
+
 
 I've included in the source code a few examples on what the bot can do based on packets/messages sent to it. Example:
 
