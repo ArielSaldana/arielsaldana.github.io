@@ -2,21 +2,21 @@
 
 layout: page-cols
 nav: about
-title: About simurai
+title: About ahhriel (Ariel Saldana)
 
 ---
 
 <div class="page-col">{% capture m %}
 
-![simurai about](/img/simurai-about.jpg)
+![ahhriel about](/img/ariel-about.jpg)
 
-__Samurai__? Almost.. Simon (my real name) + samurai = __simurai__.
+__ahhriel__? Almost.. Ariel (my real name) + the way people love to pronounce it = __ahhriel__.
 
-__Bio__: I was born in the Swiss Alps. Grew up between cows and goats. Later I lived and worked in Zürich (Switzerland), Vancouver (Canada), Fukuoka (Japan) and Haarlem (Netherlands). Currently I live in __Sapporo, Japan__.
+__Bio__: I was born in the Dominican Republic. Grew up in New York. Later I traveled and worked in Florida. Currently I live in __New Yor, NY __.
 
-__Work__: I currently work as a contractor, doing front-end UI design.
+__Work__: I currently work as a Front-End developer, doing front-end UI design with HTML, CSS, Javascript. And backend libs in PHP.
 
-__I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, movies.
+__I ♥__: dirt bikes, coding, design, art, adventures, movies.
 
 {% endcapture %}{{ m | markdownify }}</div>
 
@@ -25,10 +25,7 @@ __I ♥__: Robots (the cute ones), design, art, pop surrealism, photography, mov
 
 ## Contact
 
-* Tweet on [Twitter](http://twitter.com/simurai)
-* Comment on [dribbble](http://dribbble.com/simurai)
-* Fork on [CodePen](http://codepen.io/simurai)
-* Chat on [tlk.io](http://tlk.io/simurai)
-* Email to [sim@simurai.com](mailto:sim@simurai.com)
+* Tweet on [Twitter](http://twitter.com/yerariel)
+* Email to [sim@simurai.com](mailto:ariel@ahhriel.com)
 
 {% endcapture %}{{ m | markdownify }}</div>
