@@ -1,0 +1,29 @@
+
+/* Header ----------------------------------------- */
+
+.header {
+	
+}
+
+.header-hamburger {
+    display: none;
+}
+
+.header-title {
+	margin: .25em 0;
+	font-size: 1.75em;
+	font-weight: inherit;
+	letter-spacing: 1px;
+	color: inherit;
+}
+
+.header-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    vertical-align: top;
+}
+
+.header-description {
+	margin: 0;
+}
