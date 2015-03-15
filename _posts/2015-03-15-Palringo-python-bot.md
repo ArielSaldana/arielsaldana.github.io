@@ -12,19 +12,21 @@ This is a Palringo bot developed in python by me. It's completely open source an
 In order to log on you must enter your __credentials__ on main.py. line:
 
 ```python
-        ##LOGON INFORMATION HERE ===================================
-        parser.sendLogon('email@domain.ltd')
-        passwd = "password"
-        ## ---------------------------------------------------------
+##LOGON INFORMATION HERE ===================================
+parser.sendLogon('email@domain.ltd')
+passwd = "password"
+## ---------------------------------------------------------
 ```
 In order to alter the bot's functionality you must change the code in main.py. There are a few functions that handle data, such as:
 
 ```python
+#getters
 
-parser.getCommand() #gets the packet commend
-parser.getSourceID() #returns the userID of the person who sent the message(packet)
-parser.getTargetID() #returns the group the message(packet) was sent in
-parser.getPayload() #returns the packet payload. whether it be a message or any other information
+parser.getCommand()   #gets the packet commend
+parser.getSourceID()  #returns the userID of the person who sent the message(packet)
+parser.getTargetID()  #returns the group the message(packet) was sent in
+parser.getPayload()   #returns the packet payload. whether it be a message or any other information
+
 #handy functions
 
 parser.sendGroupMessage('groupID', 'message')
@@ -38,9 +40,8 @@ I've included in the source code a few examples on what the bot can do based on 
 #if a group message comes in
 if ( parser.getCommand() == 'GroupMESG'):
   ## if someone talks
-  if ( parser.getSourceID() != 0 ):
-    parser.sendGroupMessage(parser.getTargetID(), "shut up")
-
+    if ( parser.getSourceID() != 0 ):
+        parser.sendGroupMessage(parser.getTargetID(), "shut up")
 ```
 
 As you can see, you can change the __bot__ to behave how you want, which is pretty cool, the only problem is that this is not yet complete
