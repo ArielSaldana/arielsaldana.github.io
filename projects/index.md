@@ -1,6 +1,6 @@
 ---
 
-title: simurai projects
+title: ahhriel projects
 category: projects
 layout: index
 

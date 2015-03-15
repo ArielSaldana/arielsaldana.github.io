@@ -1,8 +1,8 @@
 # Config -----------------------------
 
-name: simurai
-description: Blog about simurai's work and CSS doodles
-url: http://simurai.com
+name: ahhriel
+description: Blog about ahhriel's work and CSS doodles
+url: http://ahhriel.com
 
 permalink: /:categories/:year/:month/:day/:title
 
@@ -21,7 +21,7 @@ redcarpet:
 #     - footnotes     # footnotes
 #     - smart         # typographic substitutions with SmartyPants
 
-#kramdown: 
+#kramdown:
 #  parse_block_html: true
 
 

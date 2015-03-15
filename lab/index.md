@@ -1,6 +1,6 @@
 ---
 
-title: simurai lab
+title: ahhriel lab
 category: lab
 layout: index
 
