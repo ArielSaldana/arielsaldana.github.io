@@ -49,3 +49,5 @@ if ( parser.getCommand() == 'GroupMESG'):
 As you can see, you can change the __bot__ to behave how you want, which is pretty cool, the only problem is that this is not yet complete
 
 The bot and source-code are free for download from github under an MIT license. [palring-python-bot-3.4](http://github.com/arielsaldana).
+
+Connect with Ariel on [Twitter](https://twitter.com/yerariel) & [Google+](http://plus.google.com/+ArielSal/)
