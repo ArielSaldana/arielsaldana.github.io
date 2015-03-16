@@ -12,9 +12,10 @@ title: About ahhriel (Ariel Saldana)
 
 __ahhriel__? Almost.. Ariel, which is my name, + the way people love to pronounce it = __ahhriel__.
 
-__Bio__: On December 6, 1994 I was born in the beautiful Dominican Republic and then shortly moved to New York where I was raised. Recently I moved to Florida for six months in order to get a change of scenery, and accept a job opportunity. Although Florida was very welcoming and definitely a change in climate, I decided it wasn't home wherr I then made the decision to move back to  __New York, NY__ where I currently live.
 
-__Work__: I currently work as a Front-End developer, doing front-end UI design with HTML, CSS, Javascript, as well as backend libs in PHP.
+__Bio__: I'm a Software Engineer / Front-end Developer born in the island Dominican Rebublic and currently reside in New York, NY. I have a passion for developing applications that are efficient and look beautiful. 
+
+__Work__: I currently work as a Front-End developer, doing front-end UI design with HTML, CSS, Javascript, as well as backend projects in PHP, Java.
 
 __I ♥__: Riding dirt bikes, coding, designing, art, going on adventures, and watching movies.
 
