@@ -12,8 +12,7 @@ title: About ahhriel (Ariel Saldana)
 
 __ahhriel__? Almost.. Ariel, which is my name, + the way people love to pronounce it = __ahhriel__.
 
-
-__Bio__: I'm a Software Engineer / Front-end Developer born in the island Dominican Rebublic and currently reside in New York, NY. I have a passion for developing applications that are efficient and look beautiful. 
+__Bio__: I'm a Software Engineer / Front-end Developer born in the Greater Antilles island Dominican Rebublic and currently reside in New York, NY. I have a passion for developing applications that are efficient and look beautiful. 
 
 __Work__: I currently work as a Front-End developer, doing front-end UI design with HTML, CSS, Javascript, as well as backend projects in PHP, Java.
 
