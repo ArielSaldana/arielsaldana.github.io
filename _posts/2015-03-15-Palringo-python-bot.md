@@ -8,6 +8,7 @@ layout: post
 ---
 
 This is a Palringo bot developed in python by me. It's completely open source and easy to __build__ upon.
+The bot uses __Python 3.4+__
 
 In order to log on you must enter your __credentials__ on main.py. line:
 
@@ -48,6 +49,6 @@ if ( parser.getCommand() == 'GroupMESG'):
 
 As you can see, you can change the __bot__ to behave how you want, which is pretty cool, the only problem is that this is not yet complete
 
-The bot and source-code are free for download from github under an MIT license. [palring-python-bot-3.4](http://github.com/arielsaldana).
+The bot and source-code are free for download from github under an MIT license. [palring-python-bot-3.4](https://github.com/ArielSaldana/palringo-python-bot).
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
