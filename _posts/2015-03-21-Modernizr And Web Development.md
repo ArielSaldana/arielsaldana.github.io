@@ -66,7 +66,7 @@ Depending on browser support with modernizr you have a fall back to work with.
 __javascript__
 
 You can also detect features using Modernizr in your JavaScript, using this syntax:
- ```javascript
+ ```JavaScript
  if (Modernizr.geolocation){
 
  }
