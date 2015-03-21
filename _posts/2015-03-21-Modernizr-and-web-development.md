@@ -11,7 +11,7 @@ If you're a Web Developer then you probably know that one of the biggest issues 
 
 And althought HTML5/CSS3 use has grown increasingly among web designers this issue has yet to be addressed properly, and Support from some vendors are inexistent.
 
-Lately, I've been using Modernizr often to provide an alternative experience to __browsers that don't support CSS3 properties__ , and it makes development much easier.
+Lately, I've been using Modernizr often to provide an alternative experience for __browsers that don't support CSS3 properties__ , and it makes development much easier.
 
 ## How it works
 
@@ -19,14 +19,14 @@ To setup Moderizr, download the file from [this page](http://modernizr.com/). Th
 
 `<script src="js/modernizr-1.0.min.js"></script>`
 
-Then include the class "no-js" on your html tag
+Then include the class "no-js" on your html tag:
 
 `<html class="no-js">`
 
 __Why add this tag?__
 
 Because if javascript isn't on then Modernizr will not work (and probably a lot of other features in your site wont work either)
-so it's good to have a fall back just incase.
+, so it's good to have a fall back just incase.
 
 if javascript is indeed enabled, then once the page is loaded that class will be replaced dynamically and will look something like this:
 
