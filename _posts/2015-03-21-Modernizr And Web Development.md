@@ -18,6 +18,6 @@ Lately, I've been using Modernizr often to provide an alternative experience to 
 
 To setup Moderizr, download the file from [this page](http://modernizr.com/). Then, on your site's head tag, add a link to the file:
 
-'<script src="js/modernizr-1.0.min.js"></script>'
+`<script src="js/modernizr-1.0.min.js"></script>`
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
