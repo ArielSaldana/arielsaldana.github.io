@@ -5,6 +5,7 @@ description: The design process for a mobile MOBA.
 tags: [app, mobile, opengl, development]
 category: projects
 layout: post
+img: http://ahhriel.com/img/posts/moba-main.jpg
 
 ---
 
