@@ -9,9 +9,9 @@ layout: post
 
 If you're a Web Developer then you probably know that one of the biggest issues is the lack of a standard between browsers and HTML/CSS support.
 
-And althought HTML5/CSS3 use has grown increasingly among web designers this issue has yet to be addressed properly, and Support from some vendors are inexistent.
+And although HTML5/CSS3 use has grown increasingly among web designers, this issue has yet to be addressed properly, and support from some vendors is inexistent.
 
-Lately, I've been using Modernizr often to provide an alternative experience for __browsers that don't support CSS3 properties__ , and it makes development much easier.
+Lately, I've been using Modernizr to provide an alternative experience for __browsers that don't support CSS3 properties__  , and it makes development much easier.
 
 ## How it works
 
