@@ -17,11 +17,11 @@ __So, why dont these numbers reflect on the mobile gaming community?__
 
 That's no easy question to answer, but the most obvious design flaw is the lack of a proper __user interface__ that would let mobile users interact with the game on a mobile platform the way that you can on a PC.
 
-On a pc you have a whole array of possible combinations, keybinds and other nifty features that just is not possible on mobile devices. While talking to a couple developers from Manufatura K4, we all came to the unanimous conclusion that the only possible solution is __to simplify what you can do__.
+On a pc you have a whole array of possible combinations, keybinds and other nifty features that are not possible on mobile devices. While talking to a couple developers from Manufatura K4, we all came to the unanimous conclusion that the only possible solution is __to simplify what you can do__.
 
 __Less is more?__
 
-In this case __less is more__, basic mechanics with a fluid user experience rather than overburdening a user with a cluttered UI IS the best way to go. We adapted the way the camera flows with an easy gesture to switch between __directed camera__, and __free camera__. We let the engine decide weather a click was meant to focus on an enemy unit or move. Crafting the mobile game to have a great feel with great mechanics is the only way you could ever hope for a mobile MOBA to compete with the PC counterparts.
+In this case __less is more__, basic mechanics with a fluid user experience rather than overburdening a user with a cluttered UI IS the best way to go. We adapted the way the camera flows with an easy gesture to switch between __directed camera__, and __free camera__. We let the engine decide whether a click was meant to focus on an enemy unit or move. Crafting the mobile game to have a great feel with great mechanics is the only way you could ever hope for a mobile MOBA to compete with the PC counterparts.
 
 It’s just a start, there’re lots of ideas how it could get improved. We'll see where this project takes us.
 
