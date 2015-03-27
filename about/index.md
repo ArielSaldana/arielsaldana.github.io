@@ -2,7 +2,7 @@
 
 layout: page-cols
 nav: about
-title: About ahhriel (Ariel Saldana)
+title: About ahhriel - Ariel Saldana
 
 ---
 
