@@ -31,7 +31,9 @@
 /* line 38, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
 .m-scene.is-exiting .scene_element {
   /*-webkit-animation-direction: alternate-reverse;
-  animation-direction: alternate-reverse;*/ }
+  animation-direction: alternate-reverse;*/
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
 /* line 43, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
 .m-scene.is-exiting .scene_element--delayed {
   -webkit-animation-delay: 0s;
@@ -39,7 +41,10 @@
 /* line 48, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
 .m-scene.is-exiting .scene_element--noexiting {
   /*-webkit-animation-direction: alternate-reverse;
-  animation-direction: alternate-reverse;*/ }
+  animation-direction: alternate-reverse;*/ 
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
 
 @media screen and (min-width: 768px) {
   /* line 57, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
