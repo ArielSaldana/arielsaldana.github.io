@@ -10,8 +10,8 @@
   animation-fill-mode: both; }
 /* line 17, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--fadetest {
-  -webkit-animation-name: fadeout;
-  animation-name: fadeout;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 .m-scene .scene_element--fadein {
   -webkit-animation-name: fadeIn;
