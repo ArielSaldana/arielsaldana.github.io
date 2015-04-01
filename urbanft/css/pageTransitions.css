@@ -2,8 +2,8 @@
 ------------------------------------------------------------------- */
 /* line 6, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
