@@ -11,9 +11,9 @@
             // for restarting css animations with a class
             content.toggleAnimationClass('is-exiting');
             // Scroll user to the top
-            /*$body.animate({
+            $body.animate({
               scrollTop: 0
-            });*/
+            });
           }
         }
       }).data('smoothState');
