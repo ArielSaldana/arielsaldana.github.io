@@ -9,7 +9,7 @@
           render: function (url, $container) {
             // toggleAnimationClass() is a public method
             // for restarting css animations with a class
-            content.toggleAnimationClass('is-exiting');
+            //content.toggleAnimationClass('is-exiting');
             // Scroll user to the top
             $body.animate({
               scrollTop: 0
