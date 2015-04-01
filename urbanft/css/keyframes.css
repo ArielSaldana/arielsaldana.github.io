@@ -1104,6 +1104,29 @@ Copyright (c) 2014 Daniel Eden
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
+  
+@-webkit-keyframes fadeInTest {
+  /* line 1127, /Users/mperez/Sites/smoothstate/source/stylesheets/keyframes.css.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 1131, /Users/mperez/Sites/smoothstate/source/stylesheets/keyframes.css.scss */
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInTest {
+  /* line 1137, /Users/mperez/Sites/smoothstate/source/stylesheets/keyframes.css.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 1141, /Users/mperez/Sites/smoothstate/source/stylesheets/keyframes.css.scss */
+  100% {
+    opacity: 1; } }
+
+/* line 1146, /Users/mperez/Sites/smoothstate/source/stylesheets/keyframes.css.scss */
+.fadeInTest {
+  -webkit-animation-name: fadeInTest;
+  animation-name: fadeInTest; }
 
 @-webkit-keyframes fadeInDown {
   /* line 1152, /Users/mperez/Sites/smoothstate/source/stylesheets/keyframes.css.scss */
