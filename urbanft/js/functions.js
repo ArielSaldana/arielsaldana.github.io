@@ -10,7 +10,7 @@
             // toggleAnimationClass() is a public method
             // for restarting css animations with a class
             //content.toggleAnimationClass('is-exiting');
-            content.toggleAnimationClass('fadeOut');
+            //content.toggleAnimationClass('fadeOut');
             // Scroll user to the top
             $body.animate({
               scrollTop: 0
