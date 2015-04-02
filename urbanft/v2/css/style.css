@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    font-family:arial;
+    margin:0;
+    padding:0;
+}
+
+/*.logo, .intro, .menu, .content {
+    padding:10px;
+}*/
+#logo {
+	-webkit-transition: all 0.1s ease;
+		-moz-transition: all 0.1s ease;
+		-o-transition: all 0.1s ease;
+		-ms-transition: all 0.1s ease;
+		transition: all 0.1s ease;
+
+
+}
+.content {
+    margin-top:10px;
+}
+.menu-padding {
+    padding-top:40px;
+}
+.content p {
+    margin-bottom:20px;
+}
+.sticky {
+    position:fixed;
+    top:0;
+}
+
+html {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+    height:1000px;
+    width:100%;
+    background-color:#0f0818;
+		//background-image: url('../images/bg.jpg');
+		/*height: 100%;*/
+		width: 100%;
+
+}
+
+#header-holder{
+  padding-top: 26px;
+	z-index: 50;
+    width:100%;
+    /*height:86px;*/
+    /*background-color:#428bca;*/
+    position:fixed;
+    top:0;
+    left:0;
+}
+header#bar {
+	position: relative;
+	z-index: 9998;
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1100px;
+}
+.header-row {
+
+}
+
+.header-row ul {
+
+	position: relative;
+}
+
+#showRightPush {
+	-webkit-transition: all 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  -ms-transition: all 0.5s ease;
+	  transition: all 0.5s ease;
+	  position: relative;
+		padding-right:10px;
+	  left: 0;
+
+}
+
+.test-left {
+	-webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-property: width;
+    transition-duration: 1s;
+	position: relative;
+	left: -240px !important;
+}
+
+.test-fade {
+	visibility: hidden;
+}
+
+.header-row ul li {
+	float: left;
+}
+
+.header-row ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	/*background: red;*/
+	display: block;
+	/*padding: 25px 25px 25px 25px;*/
+	padding-top: 7px;
+	padding-bottom: 35px;
+	padding-right: 40px;
+}
+
+.header-row ul li a:hover {
+	display: block;
+	color: #49ABB3 !important;
+	text-decoration: none;
+	/*background: red;*/
+	display: block;
+	/*padding: 25px 25px 25px 25px;*/
+	padding-top: 7px;
+	padding-bottom: 35px;
+	padding-right: 40px;
+}
+
+/*.header-row:after { content: " "; display: block; font-size: 0; height: 0; clear: both; visibility: hidden; }*/
+
+.col {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.span_1 { width: 6.5%; }
+	.span_2 { width: 15.0%; }
+	.span_3 { width: 23.5%; margin-right: 2%; }
+	.span_4 { width: 32.0%; }
+	.span_5 { width: 40.5%; }
+	.span_6 { width: 49.0%; }
+	.span_7 { width: 57.5%; }
+	.span_8 { width: 66.0%; }
+	.span_9 { width: 74.5%; }
+	.span_10 { width: 83.0%; }
+	.span_11 { width: 91.5%; }
+	.span_12 { width: 100%; }
+
+	.nav-links {
+		display: inline;
+		float: right;
+
+
+	}
+
+
+.menu {
+  /*position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
+    /*padding-top: 26px;*/
+    background:#428bca;
+    color:#fff;
+    /*height:60px;*/
+    height: 60px;
+    line-height:30px;
+    letter-spacing:1px;
+    width:100%;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.clear {
+    clear: both;
+}
+
+
+
+
+/*questionable location*/
+#hero {
+	/*position: relative;
+	top: 0;
+
+	margin: 0 auto;
+	height: 300px;
+	width: 100%;
+	background-color:white;*/
+//background-color:white;
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  //height: 400px;
+	height: 810px;
+}
+
+#featured-text {
+	width: 1100px;
+	padding-top:100px;
+
+	height: 180px;
+	margin: 0 auto;
+}
+
+#featured-text h1 {
+	font-size: 90px;
+
+}
+
+
+
+#content {
+	//position:static;
+	//position:absolute;
+	//position: relative;
+	top: 0px;
+	height: 600px;
+	width: 100%;
+	background-color: #FFF;
+	margin: 0 auto;
+
+}
+
+/*demo */
+
+section#top {
+        position: relative;
+        //background: #ff2b19;
+				background-image: url('../images/bkg_onyx.png');
+        text-align: center;
+        min-height: 100%;
+        }
+
+div.top-container {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        opacity: 1;
+        }
+div#video-container{
+	z-index:-2;
+				width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+background: #0f0818 url(/images/video-still.jpg) no-repeat;
+background-size: cover;}
+
+#video-container #big-video-vid {
+  top: 0 !important;
+}
+
+#video-container #video, #index #video-container #big-video-vid {
+  overflow: hidden;
+  height: 100% !important;
+}
+
+#big-video-wrap {
+    display: none;
+}
