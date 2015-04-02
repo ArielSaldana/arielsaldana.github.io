@@ -2,7 +2,7 @@
 
 layout: page-cols
 nav: about
-title: About ahhriel - Ariel Saldana
+title: Ariel Saldana - ahhriel 
 
 ---
 
@@ -10,7 +10,7 @@ title: About ahhriel - Ariel Saldana
 
 ![ahhriel about](/img/ariel-saldana-about.jpg)
 
-__ahhriel__? Almost.. Ariel, which is my name, + the way people love to pronounce it = __ahhriel__.
+__ahhriel__? Almost.. Ariel Saldana; which is my name, + the way people love to pronounce it = __ahhriel__.
 
 __Bio__: I'm a Software Engineer / Front-end Developer born in the Greater Antilles island Dominican Rebublic and currently reside in New York, NY. I have a passion for developing applications that are efficient and look beautiful. 
 
