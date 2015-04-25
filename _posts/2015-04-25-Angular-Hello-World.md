@@ -54,4 +54,36 @@ And to tell your app to use this module we bind it using :
 
 Now that we have a module, let's create a __Controller__
 
+## Controllers
+
+Controllers are binded to specific HTML elements. They usually contain data and functions that the app interacts with to change the DOM. Controllers an interact with other service objects, which can handle things such as communication with your server. Let's put up an example of a controller.
+
+```JavaScript 
+app.controller('mainCtrl', function($scope){
+  $scope.name = 'Default Name';
+});
+```
+
+And the HTML
+
+```HTML
+<body ng-app='myApp'>
+  <div ng-controller='mainCtrl'>
+    <input type='text' ng-model='name' />
+    <h2>{{name}}</h2>
+  </div>
+</body>
+```
+
+In this example we used the `ng-controller` directive to bind our controller function to a div element.
+
+Controllers by default get one argument which is called `$scope`. ``$scope` contains all of the data that the html can interact with. When you reload the page
+
+Controllers are usually used to manipulate data inside JavaScript, but what if you want to manipulate the DOM? Then we use __Directives__.
+
+## Directives
+
+While controllers handle the business logic of angular applications, Directives handle the UI logic.
+
+
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
