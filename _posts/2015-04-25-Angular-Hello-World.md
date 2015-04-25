@@ -45,9 +45,11 @@ While a lot of Angular's magic comes from it's easy two-way bindings, it is also
 Modules are used to organize the objects in an AngularJS application.
 
 To instatiate a module that we will use in our AngularJS app we use the angular.module function :
+
 `app = angular.module('myApp', []);`
 
 And to tell your app to use this module we bind it using :
+
 `<body ng-app='myApp'>`
 
 Now that we have a module, let's create a __Controller__
