@@ -7,10 +7,7 @@ layout: post
 
 ---
 
-## Introduction
-
 __AngularJS__ has become one of the most popular JavaScript frameworks and for good reason. The AngularJS team have done superb work and are very dedicated to ensuring AngularJS is the best it can be. AngularJS is also backed up by a strong community of users compared to other frameworks. But despite all this it's still relatively unknown to most users.
-
 
 
 ## How it works
