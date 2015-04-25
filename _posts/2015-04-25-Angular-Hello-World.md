@@ -12,7 +12,7 @@ __AngularJS__ has become one of the most popular JavaScript frameworks and for g
 
 ## How it works
 
-Angular's magic comes from its 'directives' which allow you to extend your HTML by creating your own tags and attributes. Angular applications have a differen structure than other JavaScript MVC frameworks, but it is highly modular and easy to maintain once you understand the flow and structure.
+Angular's magic comes from its 'directives' which allow you to extend your HTML by creating your own tags and attributes. Angular applications have a different structure than other JavaScript MVC frameworks, but it is highly modular and easy to maintain once you understand the flow and structure.
 
 ## Data Binding
 
@@ -41,7 +41,7 @@ While a lot of Angular's magic comes from it's easy two-way bindings, it is also
 
 Modules are used to organize the objects in an AngularJS application.
 
-To instatiate a module that we will use in our AngularJS app we use the angular.module function :
+To instantiate a module that we will use in our AngularJS app we use the angular.module function :
 
 `app = angular.module('myApp', []);`
 
@@ -80,7 +80,7 @@ Controllers are usually used to manipulate data inside JavaScript, but what if y
 
 ## Directives
 
-While controllers handle the business logic of angular applications, Directives handle the UI logic. We've already used directives in our application, such as ng-app and ng-controller. These directives are built ontop of Angular and are defaults. Let's build our own directive and use it in our application.
+While controllers handle the business logic of angular applications, Directives handle the UI logic. We've already used directives in our application, such as ng-app and ng-controller. These directives are built on top of Angular and are defaults. Let's build our own directive and use it in our application.
 
 
 ```JavaScript
@@ -154,7 +154,7 @@ Here we tell that app which template and controller to load based on the URL rou
 
 __ROUTING AND SEO__
 
-If you were to refresh at /home.html or /profile.html you would get a 404 error. In order to correctly re-route to these url you'd have to do addictional server configurations. Basically you'd to point any url directives to the base app.
+If you were to refresh at /home.html or /profile.html you would get a 404 error. In order to correctly re-route to these url you'd have to do additional server configurations. Basically you'd to point any url directives to the base app.
 
 ## Conclusion
 
