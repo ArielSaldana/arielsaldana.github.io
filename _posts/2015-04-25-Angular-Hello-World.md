@@ -77,13 +77,42 @@ And the HTML
 
 In this example we used the `ng-controller` directive to bind our controller function to a div element.
 
-Controllers by default get one argument which is called `$scope`. ``$scope` contains all of the data that the html can interact with. When you reload the page
+Controllers by default get one argument which is called `$scope`. `$scope` contains all of the data that the html can interact with. When you reload the page
 
 Controllers are usually used to manipulate data inside JavaScript, but what if you want to manipulate the DOM? Then we use __Directives__.
 
 ## Directives
 
-While controllers handle the business logic of angular applications, Directives handle the UI logic.
+While controllers handle the business logic of angular applications, Directives handle the UI logic. We've already used directives in our application, such as ng-app and ng-controller. These directives are built ontop of Angular and are defaults. Let's build our own directive and use it in our application.
+
+
+```JavaScript
+app.directive('alertable', function(){
+  return {
+    restrict : 'A',
+    link: function(scope, element, attrs) {
+      element.bind('click', function() {
+        alert(attrs.alertable);
+      });
+     }
+  };
+});
+```
+
+```HTML
+<li ng-repeat='person in people'>
+  <span alertable='{{person}}'>{{person}}</span>
+</li>
+```
+
+As you can see, directives return an object that will define the directive. There are several optional arguments that can be passed here, but let’s look at the two we used here:
+
+#restrict : This tells your directive what kind of directive it will be. restrict is required and there are four possible arguments that can be passed to it:
+
+#E : Element. example usage: `<my-directive></my-directive>`
+#A : Attribute. example usage: `<div my-directive></div>`
+#C : Class. example usage: `<div class='my-directive'></div>`
+#M : Comment. example usage: `<!-- directive:my-directive -->`
 
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
