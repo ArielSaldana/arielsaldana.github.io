@@ -40,6 +40,16 @@ Now let's explain what's happening.
 
 While a lot of Angular's magic comes from it's easy two-way bindings, it is also it's Achilles heel. On one hand you have ability to build the UI through a clean interface, and less-destrutive DOM presentation, but on the other hand - having too many directives modifying the dom can greatly decrease a AngularJS app's performance. 
 
+## Modules
 
+Modules are used to organize the objects in an AngularJS application.
+
+To instatiate a module that we will use in our AngularJS app we use the angular.module function :
+`app = angular.module('myApp', []);`
+
+And to tell your app to use this module we bind it using :
+`<body ng-app='myApp'>`
+
+Now that we have a module, let's create a __Controller__
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
