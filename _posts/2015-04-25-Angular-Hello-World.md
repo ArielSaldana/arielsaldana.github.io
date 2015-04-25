@@ -153,6 +153,14 @@ app.config(function($routeProvider){
 });
 ```
 
+Here we tell that app which template and controller to load based on the URL routed through the AngularJS application. 
+
+__ROUTING AND SEO__
+
+If you were to refresh at /home.html or /profile.html you would get a 404 error. In order to correctly re-route to these url you'd have to do addictional server configurations. Basically you'd to point any url directives to the base app.
+
+## Conclusion
+
 I hope you found this helpful, but this is just scratching the surface of what Angular.js is capable of. If you would like to learn more about Angular, here are some resources for further reading:
 
 [AngularJS Documentation](http://angularjs.org) - official documentation, lots of good examples
