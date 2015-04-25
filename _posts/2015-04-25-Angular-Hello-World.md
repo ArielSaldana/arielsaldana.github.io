@@ -1,6 +1,6 @@
 ---
 
-title: Angular Hello World Tutorial
+title: AngularJS Introduction
 tags: [css,html,javascript,js,web]
 category: blog
 layout: post
@@ -113,6 +113,52 @@ restrict : This tells your directive what kind of directive it will be. restrict
 + A : Attribute. example usage: `<div my-directive></div>`
 + C : Class. example usage: `<div class='my-directive'></div>`
 + M : Comment. example usage: `<!-- directive:my-directive -->`
++ 
+
+Read about more possible directives at [AngularJs](https://docs.angularjs.org/guide/directive)
+
+##Services
+
+Services are classes that handle business logic and or data. To define a service you do :
+
+```Javascript
+app.factory('PersonService', function() {
+  var PersonService = {};
+  PersonService.people = [];
+  PersonService.addPerson = function(person) {
+    PersonService.people.push(person);
+  };
+  return PersonService;
+});
+```
+
+The first thing you should notice is that services are created differently than controllers. Controllers are functions, services are functions that returns an object. This gives you the option of adding private methods to your service if you would like.
+
+When writing services, Angular provides some helpful modules for communicating with the server. Some of the most useful are ngHttp and ngResource. 
+
+## Routing
+
+Angular also provides support for routing with URLs. Routing is performed by using the config function of the module. Let’s use this to structure separate pages for our main page, and give each person in our person list a profile page. Here is what the route provider will look like:
+
+```JavaScript
+app.config(function($routeProvider){
+  $routeProvider.when('/', {
+    templateUrl: 'templates/home.html',
+    controller: 'homePageCtrl'
+  });
+  $routeProvider.when('/person/:id', {
+    templateUrl: 'templates/profile.html',
+    controller: 'profileCtrl'
+  });
+});
+```
+
+I hope you found this helpful, but this is just scratching the surface of what Angular.js is capable of. If you would like to learn more about Angular, here are some resources for further reading:
+
+[AngularJS Documentation](http://angularjs.org) - official documentation, lots of good examples
+[EggHead.io](http://egghead.io) - several short (usually 4 or 5 minute) videos explaining several particular parts of angular.
+[A Comparison of Angular, Backbone, CanJS and Ember](http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/) - a great article comparing AngularJS to some
+
 
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
