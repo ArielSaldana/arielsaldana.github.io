@@ -19,6 +19,8 @@ Angular's magic comes from its 'directives' which allow you to extend your HTML 
 
 ## Data Binding
 
+Let’s take a look at a very simple AngularJS app, that uses two-way data binding.
+
 ``` html
 <body ng-app>
   <div>
@@ -26,8 +28,17 @@ Angular's magic comes from its 'directives' which allow you to extend your HTML 
     <h2>{{name}}</h2>
   </div>
 </body>
-
 ```
+
+Now let's explain what's happening.
+
+`<body ng-app>` : All Angular code must be wrapper in this directive. This declares that everything within this tag will be treated as an angular application.
+
+`<input type='text' ng-model='name' />` : This is one part of the data binding. Here we are using another directive, ng-model, to bind the input to a string. Note that in this example we also see that attribute directives can have arguments.
+
+`<h2>{{name}}</h2>` : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.
+
+While a lot of Angular's magic comes from it's easy two-way bindings, it is also it's Achilles heel. On one hand you have ability to build the UI through a clean interface, and less-destrutive DOM presentation, but on the other hand - having too many directives modifying the dom can greatly decrease a AngularJS app's performance. 
 
 
 
