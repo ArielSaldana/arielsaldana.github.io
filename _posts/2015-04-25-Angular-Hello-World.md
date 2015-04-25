@@ -107,12 +107,12 @@ app.directive('alertable', function(){
 
 As you can see, directives return an object that will define the directive. There are several optional arguments that can be passed here, but let’s look at the two we used here:
 
-#restrict : This tells your directive what kind of directive it will be. restrict is required and there are four possible arguments that can be passed to it:
+restrict : This tells your directive what kind of directive it will be. restrict is required and there are four possible arguments that can be passed to it:
 
-#E : Element. example usage: `<my-directive></my-directive>`
-#A : Attribute. example usage: `<div my-directive></div>`
-#C : Class. example usage: `<div class='my-directive'></div>`
-#M : Comment. example usage: `<!-- directive:my-directive -->`
+1. E : Element. example usage: `<my-directive></my-directive>`
++ A : Attribute. example usage: `<div my-directive></div>`
++ C : Class. example usage: `<div class='my-directive'></div>`
++ M : Comment. example usage: `<!-- directive:my-directive -->`
 
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
