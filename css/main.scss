@@ -22,7 +22,8 @@ $color-hint: lighten($color, 48%);
 // Imports
 
 @import "_lib/normalize";
-@import "_lib/solarized";
+//@import "_lib/solarized";
+@import "_lib/obsidian";
 
 @import "global";
 @import "header";
