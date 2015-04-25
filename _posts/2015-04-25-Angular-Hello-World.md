@@ -17,6 +17,18 @@ __AngularJS__ has become one of the most popular JavaScript frameworks and for g
 
 Angular's magic comes from its 'directives' which allow you to extend your HTML by creating your own tags and attributes. Angular applications have a differen structure than other JavaScript MVC frameworks, but it is highly modular and easy to maintain once you understand the flow and structure.
 
+## Data Binding
+
+``` html
+<body ng-app>
+  <div>
+    <input type='text' ng-model='name' />
+    <h2>{{name}}</h2>
+  </div>
+</body>
+
+```
+
 
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
