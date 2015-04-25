@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -8,47 +9,52 @@
 
 <url>
   <loc>http://ahhriel.com/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/projects/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/lab/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/blog/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/about/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://ahhriel.com/blog/2015/04/25/Angular-Hello-World/</loc>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/projects/2015/03/26/Mobile-Moba-Project/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/blog/2015/03/21/Modernizr-and-web-development/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/blog/2015/03/15/Palringo-python-bot/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://ahhriel.com/blog/2015/03/14/Hello/</loc>
-  <lastmod>2015-03-28T00:20:35+00:00</lastmod>
+  <lastmod>2015-04-25T15:35:02+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 </urlset>
