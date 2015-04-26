@@ -160,11 +160,9 @@ If you were to refresh at /home.html or /profile.html you would get a 404 error.
 
 I hope you found this helpful, but this is just scratching the surface of what Angular.js is capable of. If you would like to learn more about Angular, here are some resources for further reading:
 
-[AngularJS Documentation](http://angularjs.org) - official documentation, lots of good examples
-
-[EggHead.io](http://egghead.io) - several short (usually 4 or 5 minute) videos explaining several particular parts of angular.
-
-[A Comparison of Angular, Backbone, CanJS and Ember](http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/) - a great article comparing AngularJS to some
+[AngularJS Documentation](http://angularjs.org) - official documentation, lots of good examples  
+[EggHead.io](http://egghead.io) - several short (usually 4 or 5 minute) videos explaining several particular parts of angular.  
+[A Comparison of Angular, Backbone, CanJS and Ember](http://sporto.github.io/blog/2013/04/12/comparison-angular-backbone-can-ember/) - a great article comparing AngularJS to some  
 
 
 
