@@ -7,7 +7,7 @@ layout: post
 
 ---
 
-__AngularJS__ has become one of the most popular JavaScript frameworks and for good reason. The AngularJS team have done superb work and are very dedicated to ensuring AngularJS is the best it can be. AngularJS is also backed up by a strong community of users compared to other frameworks. But despite all this it's still relatively unknown to most users.
+__AngularJS__ has become one of the most popular JavaScript frameworks for good reasons. The AngularJS team have done superb work and are very dedicated to ensuring AngularJS is the best it can be. AngularJS is also backed up by a strong community of users compared to other frameworks. But despite all this it's still relatively unknown to most users.
 
 
 ## How it works
@@ -18,7 +18,7 @@ Angular's magic comes from its 'directives' which allow you to extend your HTML 
 
 Let’s take a look at a very simple AngularJS app, that uses two-way data binding.
 
-``` html
+```html
 <body ng-app>
   <div>
     <input type='text' ng-model='name' />
@@ -35,7 +35,7 @@ Now let's explain what's happening.
 
 `<h2>{{name}}</h2>` : Whenever you type into the input box, this h2 tag updates automatically. This is the automatic DOM manipulation I mentioned earlier. We were able to do this without writing a single line of JavaScript.
 
-While a lot of Angular's magic comes from it's easy two-way bindings, it is also it's Achilles heel. On one hand you have ability to build the UI through a clean interface, and less-destrutive DOM presentation, but on the other hand - having too many directives modifying the dom can greatly decrease a AngularJS app's performance. 
+While a lot of AngularJS's magic comes from it's easy two-way data bindings, that two way data-binding means that changing anything in your application will trigger hundreds of functions that monitor changes. This could hinder performance especially on mobile devices, so you should be careful of Angular's Achilles heel.
 
 ## Modules
 
