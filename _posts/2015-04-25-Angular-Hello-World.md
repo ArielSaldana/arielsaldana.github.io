@@ -110,7 +110,6 @@ restrict : This tells your directive what kind of directive it will be. restrict
 + A : Attribute. example usage: `<div my-directive></div>`
 + C : Class. example usage: `<div class='my-directive'></div>`
 + M : Comment. example usage: `<!-- directive:my-directive -->`
-+ 
 
 Read about more possible directives at [AngularJs](https://docs.angularjs.org/guide/directive)
 
