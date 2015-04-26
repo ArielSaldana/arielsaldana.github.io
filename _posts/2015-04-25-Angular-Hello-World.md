@@ -29,7 +29,7 @@ Let’s take a look at a very simple AngularJS app, that uses two-way data bindi
 
 Now let's explain what's happening.
 
-`<body ng-app>` : All Angular code must be wrapper in this directive. This declares that everything within this tag will be treated as an angular application.
+`<body ng-app>` : All Angular code must be wrapped in this directive. This declares that everything within this tag will be treated as an angular application.
 
 `<input type='text' ng-model='name' />` : This is one part of the data binding. Here we are using another directive, ng-model, to bind the input to a string. Note that in this example we also see that attribute directives can have arguments.
 
