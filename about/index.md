@@ -8,7 +8,7 @@ title: Ariel Saldana - About | ahhriel
 
 <div class="page-col">{% capture m %}
 
-![ahhriel about](/img/ariel-saldana-about.jpg)
+![ahhriel about](/img/ariel-saldana-about.jpgg)
 
 __ahhriel__? Almost.. Ariel Saldana; which is my name, + the way people love to pronounce it = __ahhriel__.
 
