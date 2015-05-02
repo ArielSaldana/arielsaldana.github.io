@@ -1,7 +1,9 @@
 ---
 
 title: AngularJS Introduction
-description: Introduction to AngularJS Developent. AngularJS extends the normal HTML syntax to express the application component more clearly giving HTML functionalities . 
+description: Introduction to AngularJS Developent. AngularJS extends the normal HTML syntax to express the application
+keywords: css,html,javascript,js,web
+component more clearly giving HTML functionalities . 
 tags: [css,html,javascript,js,web]
 category: blog
 layout: post
