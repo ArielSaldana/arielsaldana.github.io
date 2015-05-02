@@ -1,6 +1,7 @@
 ---
 
 title: Mordernizr and Web Development
+description: Introduction to modernizr for web developers. Modernizr is a great tool to provide an alternative browsing experiene to your website viewers.
 tags: [css,html,javascript,js,web]
 category: blog
 layout: post
