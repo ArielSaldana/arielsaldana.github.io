@@ -1,6 +1,6 @@
 ---
 
-title: Ahhriel | AngularJS Introduction
+title: AngularJS Introduction
 description: Introduction to AngularJS Developent. AngularJS extends the normal HTML syntax to express the application component more clearly giving HTML functionalities. 
 keywords: css,html,javascript,js,web
 tags: [css,html,javascript,js,web]
