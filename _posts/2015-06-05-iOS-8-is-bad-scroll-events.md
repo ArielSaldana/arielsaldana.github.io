@@ -13,7 +13,7 @@ When iOS was developed the bright engineers at Apple faced difficult challenges 
 
 ## Why this made sense in the prehistoric era
 
-Back in 2007, when the first iPhone came out there was no such thing as mobile friendly websites, and a lot of websites were running performance intensive code. Given these circumstances and the environment that the web was for mobile devices back then it's safe to say that it was a sane decision to stop JavaScript execution on scroll.
+Back in 2007, when the first iPhone came out there was no such thing as mobile friendly websites, and a lot of websites were running performance intensive code. Given these circumstances and the environment that mobile phones were incubating in it's safe to say that it was a sane decision to stop JavaScript execution on scroll.
 
 ## Why this doesn't make sense in 2015
 
