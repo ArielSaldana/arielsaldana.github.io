@@ -17,7 +17,7 @@ Back in 2007, when the first iPhone came out there was no such thing as mobile f
 
 ## Why this doesn't make sense in 2015
 
-I came upon this problem when I was writing an arbitrary library to handle parallax scrolling in JavaScript, I soon found out that iOS stops the JavaScript execution on __scroll__ events. So I'm just here all like F*** iOS and their shi*** OS, just freaking a little because there's absolutely no reason that in 2015 you should have to rebuild a scrolling in JavaScript which hinders performance greatly when the hardware capability is definitely there to support native scrolling. Originally in the mobile device ecosystem, Android and IE Mobile also paused JavaScript execution. By 2011 engineers working on Android decided that the hardware was good enough to continuously fire JavaScript events during scrolling. Even IE Mobile followed suit in 2012 - which meant iOS was the only hold out.
+I came upon this problem when I was writing an arbitrary library to handle parallax scrolling in JavaScript. I soon found out that iOS stops the JavaScript execution on __scroll__ events. So I'm just here all like F*** iOS and Apple and their shi*** OS! Making me freak out a little because there's absolutely no reason that in 2015 you should have to rebuild scrolling in JavaScript which hinders performance greatly when the hardware capability is definitely there to support native scrolling. Originally in the mobile device ecosystem, Android and IE Mobile also paused JavaScript execution. By 2011 engineers working on Android decided that the hardware was good enough to continuously fire JavaScript events during scrolling. Even IE Mobile followed suit in 2012 - which meant iOS was the only hold out.
 
 ## iOS has joined us
 
