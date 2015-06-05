@@ -1,7 +1,7 @@
 ---
 
 title: Mobile MOBA using UE4
-description: The design process for a mobile MOBA unsing Unreal Engine 4 (ue4).
+description: The design process for a mobile MOBA using Unreal Engine 4 (ue4).
 keywords: app,mobile,opengl,development,unreal,engine,4,game,mobile,platform
 tags: [app, mobile, opengl, development]
 category: projects
