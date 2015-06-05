@@ -9,11 +9,11 @@ layout: post
 
 ---
 
-When iOS was developed the bright engineers at Apple faced difficult challenges when trying to display the web on a small screen. Touch events, viewports, etc are all a product (for better or worse) of trying to make the web better accessible on smaller mobile device screens. One of the biggest decisions by Apple was to __pause__ any changes made to the DOM via JavaScript. In fact - JavaScript execution halts completely.
+When iOS was developed the bright engineers at Apple faced difficult challenges when trying to display the web on a small screen. Touch events, viewports, etc are all a product (for better or worse) of trying to make the web better accessible on smaller mobile device screens. One of the biggest decisions by Apple was to __pause__ any changes made to the DOM via JavaScript during scrolling. In fact - JavaScript execution halts completely.
 
 ## Why this made sense in the prehistoric era
 
-Back in 2007, when the first iPhone came out there was no such thing as mobile friendly websites, and a lot of websites were running performance intensive code. Given these circumstances and the environment that mobile phones were incubating in it's safe to say that it was a sane decision to stop JavaScript execution on scroll.
+Back in 2007, when the first iPhone came out there was no such thing as mobile friendly websites, and a lot of websites were running performance intensive code. Given these circumstances and the environment that mobile phones were incubating in it's safe to say that it was a sane decision to stop JavaScript execution on scroll to improve performance.
 
 ## Why this doesn't make sense in 2015
 
