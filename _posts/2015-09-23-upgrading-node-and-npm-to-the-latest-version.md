@@ -15,7 +15,7 @@ Turns out there was - using NPM. To upgrade your local nosejs version using npm 
 
 
 
-```html
+```sh
 <body ng-app>
   <div>
     <input type='text' ng-model='name' />
