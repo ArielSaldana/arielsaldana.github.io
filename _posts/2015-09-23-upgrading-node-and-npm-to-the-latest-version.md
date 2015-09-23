@@ -25,4 +25,6 @@ NPM might give you a warning to use the force command - if it does use:
 sudo npm cache clean --force
 ```
 
+It's quite nice that you can upgrade Node.js right from npm;  it's like Inception...or something.
+
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
