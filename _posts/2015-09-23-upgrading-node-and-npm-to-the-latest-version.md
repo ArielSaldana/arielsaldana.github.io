@@ -13,15 +13,16 @@ I recently ran into a project that involved me using the current version of node
 
 Turns out there was - using NPM. To upgrade your local nosejs version using npm do the following:
 
+```sh
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
 
+NPM might give you a warning to use the force command - if it does use: 
 
 ```sh
-<body ng-app>
-  <div>
-    <input type='text' ng-model='name' />
-    <h2>{{name}}</h2>
-  </div>
-</body>
+sudo npm cache clean --force
 ```
 
 Connect with Ariel on [Twitter](https://twitter.com/yerariel) & <a rel="author" href="https://plus.google.com/+ArielSal"> Google+ </a>
