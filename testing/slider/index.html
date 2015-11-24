@@ -149,7 +149,29 @@
       $('.p-slider li').eq(that.slide-2).removeClass('inactive').addClass('active');
       that.slide -= 1;
     }
-    })
+    });
+
+     var mc = new Hammer(elements[0]);
+
+// let the pan gesture support all directions.
+// this will block the vertical scrolling on a touch-device while on the element
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+// listen to events...
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    //elements[0].textContent = ev.type +" gesture detected.";
+    if (ev.type == 'panleft')
+    {
+      if (that.slide <= that.maxSlides)
+      {
+      that.$slide.eq(that.slide-1).removeClass('active').addClass('inactive');
+      that.$slide.eq(that.slide).removeClass('inactive').addClass('active');
+      that.slide += 1;
+    }
+    }
+});
+
+
     }
 
 
@@ -158,10 +180,7 @@
   //var sliderElem = document.getElementsByClassName('p-slider');
   var slider = new P.Components.Slider(sliderElem);
 
-  var hammertime = new Hammer(sliderElem);
-hammertime.on('pan', function(ev) {
-    console.log(ev);
-});
+
   </script>
 </body>
 </html>
