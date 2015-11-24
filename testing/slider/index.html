@@ -169,7 +169,8 @@ mc.on("panleft panright panup pandown tap press", function(ev) {
         that.$slide.eq(that.slide).removeClass('inactive').addClass('active');
         that.slide += 1;
       }
-    if (ev.type == 'panright')
+    }
+    else if (ev.type == 'panright')
     {
       if (that.slide > 1)
       {
@@ -178,7 +179,7 @@ mc.on("panleft panright panup pandown tap press", function(ev) {
         that.slide -= 1;
       }
     }
-    }
+
 });
 
 
