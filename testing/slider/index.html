@@ -115,9 +115,13 @@
     slide : 0,
     maxSlides : 0,
     $slide : null,
+    working : false,
+    lock : false,
     construct : function(elements, options)
     {
       this._super( options );
+      this.ticker             = new P.Tools.Ticker();
+
       var that = this;
       that.$slide = $('.p-slider li');
       var i = 0;
@@ -134,55 +138,79 @@
       console.log(elements[0]);
 
       $('.p-slider #next').bind("click", function(i){
+        that.goToImage('right');
+      });
+
+      $('.p-slider #back').bind("click", function(i){
+        that.goToImage('left');
+      });
+
+      var mc = new Hammer(elements[0]);
+
+      // let the pan gesture support all directions.
+      // this will block the vertical scrolling on a touch-device while on the element
+      mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+      // listen to events...
+      mc.on("panleft panright panup pandown tap press", function(ev) {
+          //elements[0].textContent = ev.type +" gesture detected.";
+          console.log(ev.type);
+          //
+          // if (!this.lock)
+          // return;
+
+
+          this.lock = true;
+          if (ev.type == 'panleft')
+          {
+            that.goToImage('left');
+          }
+          else if (ev.type == 'panright')
+          {
+            that.goToImage('right');
+          }
+
+      });
+
+
+    },
+
+    initButtons : function(){
+
+    },
+
+    goToImage : function(direction){
+      var that = this;
+
+      if (that.working)
+      return;
+
+      that.working = true;
+
+      if (direction === 'left')
+      {
         if (that.slide <= that.maxSlides)
         {
-        that.$slide.eq(that.slide-1).removeClass('active').addClass('inactive');
-        that.$slide.eq(that.slide).removeClass('inactive').addClass('active');
-        that.slide += 1;
+          that.$slide.eq(that.slide-1).removeClass('active').addClass('inactive');
+          that.$slide.eq(that.slide).removeClass('inactive').addClass('active');
+          that.slide += 1;
+        }
       }
-    });
 
-    $('.p-slider #back').bind("click", function(i){
-      if (that.slide > 1)
+      else if (direction === 'right')
       {
-      $('.p-slider li').eq(that.slide-1).removeClass('active').addClass('inactive');
-      $('.p-slider li').eq(that.slide-2).removeClass('inactive').addClass('active');
-      that.slide -= 1;
-    }
-    });
-
-     var mc = new Hammer(elements[0]);
-
-// let the pan gesture support all directions.
-// this will block the vertical scrolling on a touch-device while on the element
-mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-
-// listen to events...
-mc.on("panleft panright panup pandown tap press", function(ev) {
-    //elements[0].textContent = ev.type +" gesture detected.";
-    console.log(ev.type);
-    if (ev.type == 'panleft')
-    {
-      if (that.slide <= that.maxSlides)
-      {
-        that.$slide.eq(that.slide-1).removeClass('active').addClass('inactive');
-        that.$slide.eq(that.slide).removeClass('inactive').addClass('active');
-        that.slide += 1;
+        if (that.slide > 1)
+        {
+          $('.p-slider li').eq(that.slide-1).removeClass('active').addClass('inactive');
+          $('.p-slider li').eq(that.slide-2).removeClass('inactive').addClass('active');
+          that.slide -= 1;
+        }
       }
-    }
-    else if (ev.type == 'panright')
-    {
-      if (that.slide > 1)
-      {
-        $('.p-slider li').eq(that.slide-1).removeClass('active').addClass('inactive');
-        $('.p-slider li').eq(that.slide-2).removeClass('inactive').addClass('active');
-        that.slide -= 1;
-      }
-    }
-
-});
-
-
+      that.ticker.on( 'tick-1500', function (infos){
+        console.log(infos.elapsed);
+        that.working = false;
+        that.ticker.off('tick-1500');
+      })
     }
 
 
