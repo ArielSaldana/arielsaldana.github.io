@@ -1,0 +1,16 @@
+/**
+ * @file    main.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+
+$font-stack: Open-Sans, Helvetica, sans-serif;
+
+@import 'constants/constants';
+
+@import 'reset';
+@import 'mixins/clearfix';
+@import 'responsive';
+
+@import 'default';
+@import 'base';
+@import 'type';

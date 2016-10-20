@@ -1,0 +1,145 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*h1, h2, h3 {
+    font-weight:100;
+}*/
+
+.logo p {
+    font-weight:100;
+    font-size:1.5rem;
+    text-align: center;
+    margin:60px 0 20px;
+}
+
+.logo span {
+    font-weight:600;
+}
+
+.navigation ul {
+    list-style: none;
+    width:100%;
+    text-align: center;
+}
+
+.navigation ul li {
+    display: inline-block;
+    padding:0 10px; 
+    
+}
+
+.navigation ul li a {
+    display: block;
+    text-decoration: none;
+    color:#7353a7;
+    font-weight:600;
+    padding-bottom:4px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navigation ul li.active a {
+    border-bottom: 2px solid #7353a7;
+    
+}
+
+.heading p {
+    text-align:center;
+}
+h1 {
+    margin-top:60px;
+    font-weight:100;
+}
+
+#release-notes.container {
+    max-width: 680px;
+    text-align: left;
+    margin: 60px auto;
+}
+
+.release-notes h2 {
+    color: #3c3c3c;
+    text-align:left;
+    border-bottom:1px solid #eaeaea;
+    margin-bottom:20px;
+}
+
+.release-notes .meta {
+    float:right;
+    font-weight:100;
+    font-size:14px;
+    line-height:16px;
+    /*position:relative;*/
+    /*bottom:-6px;*/
+}
+
+.release-notes .meta span:first-child {
+    margin-right:20px;
+}
+
+.release-notes ul.changes {
+    padding-bottom:30px;
+}
+
+.release-notes ul.changes li {
+    padding-left:100px;
+    margin-bottom:18px;
+    font-size:14px;
+    line-height: 1.5;
+}
+
+.release-notes .change-label-container {
+    display: inline-block;
+    width:80px;
+    float:left;
+    margin-left:-100px;
+}
+
+.release-notes .change-label-container em {
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+
+
+.change-label-container em.updated {
+    background-color:#ffd700;
+    color:white;
+}
+
+.change-label-container em.fixed {
+    background-color: #a557ef;
+    color:white;
+}
+
+.change-label-container em.added {
+    background-color: #1d62f0;
+    color:white;
+}
+
+.change-label-container em.improved {
+    background-color: #16bf48;
+    color:white;
+}
+
+.change-label-container em.bug {
+    background-color: #ff6427;
+    color:white;
+}
+
+.change-label-container em.todo {
+    background-color: #9b59b6;
+    color:white;
+}
+
+
+
+
+

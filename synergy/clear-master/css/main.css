@@ -1,0 +1,396 @@
+/**
+ * @file    main.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+/**
+ * @file    constants.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+/**
+ * @file    colors.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * @file    clearfix.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+/**
+ * @file    responsive.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media only screen and (min-width: 20em) {
+  .col-x-small-12 {
+    width: 100%; }
+  .col-x-small-11 {
+    width: 91.66667%; }
+  .col-x-small-10 {
+    width: 83.33333%; }
+  .col-x-small-9 {
+    width: 75%; }
+  .col-x-small-8 {
+    width: 66.66667%; }
+  .col-x-small-7 {
+    width: 58.33333%; }
+  .col-x-small-6 {
+    width: 50%; }
+  .col-x-small-5 {
+    width: 41.66667%; }
+  .col-x-small-4 {
+    width: 33.33333%; }
+  .col-x-small-3 {
+    width: 25%; }
+  .col-x-small-2 {
+    width: 16.66667%; }
+  .col-x-small-1 {
+    width: 8.33333%; } }
+
+@media only screen and (min-width: 34em) {
+  .col-small-12 {
+    width: 100%; }
+  .col-small-11 {
+    width: 91.66667%; }
+  .col-small-10 {
+    width: 83.33333%; }
+  .col-small-9 {
+    width: 75%; }
+  .col-small-8 {
+    width: 66.66667%; }
+  .col-small-7 {
+    width: 58.33333%; }
+  .col-small-6 {
+    width: 50%; }
+  .col-small-5 {
+    width: 41.66667%; }
+  .col-small-4 {
+    width: 33.33333%; }
+  .col-small-3 {
+    width: 25%; }
+  .col-small-2 {
+    width: 16.66667%; }
+  .col-small-1 {
+    width: 8.33333%; } }
+
+@media only screen and (min-width: 48em) {
+  .col-medium-12 {
+    width: 100%; }
+  .col-medium-11 {
+    width: 91.66667%; }
+  .col-medium-10 {
+    width: 83.33333%; }
+  .col-medium-9 {
+    width: 75%; }
+  .col-medium-8 {
+    width: 66.66667%; }
+  .col-medium-7 {
+    width: 58.33333%; }
+  .col-medium-6 {
+    width: 50%; }
+  .col-medium-5 {
+    width: 41.66667%; }
+  .col-medium-4 {
+    width: 33.33333%; }
+  .col-medium-3 {
+    width: 25%; }
+  .col-medium-2 {
+    width: 16.66667%; }
+  .col-medium-1 {
+    width: 8.33333%; } }
+
+@media only screen and (min-width: 62em) {
+  .col-large-12 {
+    width: 100%; }
+  .col-large-11 {
+    width: 91.66667%; }
+  .col-large-10 {
+    width: 83.33333%; }
+  .col-large-9 {
+    width: 75%; }
+  .col-large-8 {
+    width: 66.66667%; }
+  .col-large-7 {
+    width: 58.33333%; }
+  .col-large-6 {
+    width: 50%; }
+  .col-large-5 {
+    width: 41.66667%; }
+  .col-large-4 {
+    width: 33.33333%; }
+  .col-large-3 {
+    width: 25%; }
+  .col-large-2 {
+    width: 16.66667%; }
+  .col-large-1 {
+    width: 8.33333%; } }
+
+@media only screen and (min-width: 20em) {
+  .col-x-large-12 {
+    width: 100%; }
+  .col-x-large-11 {
+    width: 91.66667%; }
+  .col-x-large-10 {
+    width: 83.33333%; }
+  .col-x-large-9 {
+    width: 75%; }
+  .col-x-large-8 {
+    width: 66.66667%; }
+  .col-x-large-7 {
+    width: 58.33333%; }
+  .col-x-large-6 {
+    width: 50%; }
+  .col-x-large-5 {
+    width: 41.66667%; }
+  .col-x-large-4 {
+    width: 33.33333%; }
+  .col-x-large-3 {
+    width: 25%; }
+  .col-x-large-2 {
+    width: 16.66667%; }
+  .col-x-large-1 {
+    width: 8.33333%; } }
+
+/* responsive ultilities */
+.visible-xsmall {
+  display: none; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    .visible-xsmall {
+      display: inherit; } }
+
+.visible-small {
+  display: none; }
+  @media only screen and (min-width: 34em) and (max-width: 48.0em) {
+    .visible-small {
+      display: inherit; } }
+
+.visible-medium {
+  display: none; }
+  @media only screen and (min-width: 48em) and (max-width: 62.0em) {
+    .visible-medium {
+      display: inherit; } }
+
+.visible-large {
+  display: none; }
+  @media only screen and (min-width: 62em) and (max-width: 75.0em) {
+    .visible-large {
+      display: inherit; } }
+
+.visible-xlarge {
+  display: none; }
+  @media only screen and (min-width: 75em) {
+    .visible-xlarge {
+      display: inherit; } }
+
+.hidden-xsmall-up {
+  display: inherit; }
+  @media only screen and (min-width: 20em) {
+    .hidden-xsmall-up {
+      display: none; } }
+
+.hidden-small-up {
+  display: inherit; }
+  @media only screen and (min-width: 34em) {
+    .hidden-small-up {
+      display: none; } }
+
+.hidden-medium-up {
+  display: inherit; }
+  @media only screen and (min-width: 48em) {
+    .hidden-medium-up {
+      display: none; } }
+
+.hidden-large-up {
+  display: inherit; }
+  @media only screen and (min-width: 62em) {
+    .hidden-large-up {
+      display: none; } }
+
+.hidden-xlarge-up {
+  display: inherit; }
+  @media only screen and (min-width: 75em) {
+    .hidden-xlarge-up {
+      display: none; } }
+
+.visible-xsmall-up {
+  display: none; }
+  @media only screen and (min-width: 20em) {
+    .visible-xsmall-up {
+      display: inherit; } }
+
+.visible-small-up {
+  display: none; }
+  @media only screen and (min-width: 34em) {
+    .visible-small-up {
+      display: inherit; } }
+
+.visible-medium-up {
+  display: none; }
+  @media only screen and (min-width: 48em) {
+    .visible-medium-up {
+      display: inherit; } }
+
+.visible-large-up {
+  display: none; }
+  @media only screen and (min-width: 62em) {
+    .visible-large-up {
+      display: inherit; } }
+
+.visible-xlarge-up {
+  display: none; }
+  @media only screen and (min-width: 75em) {
+    .visible-xlarge-up {
+      display: inherit; } }
+
+/**
+ * @file    default.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+/**
+ * @file    base.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+::-moz-selection {
+  /* Code for Firefox */ }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, sans-serif; }
+
+/**
+ * @file    type.scss
+ * @author  Ariel Saldana / http://ariel.io
+ */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px 0; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    h1 {
+      font-size: 1.6rem; } }
+  @media only screen and (min-width: 75em) {
+    h1 {
+      font-size: 2.25rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px 0; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    h2 {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 75em) {
+    h2 {
+      font-size: 1.6875rem; } }
+
+h3 {
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px 0; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    h3 {
+      font-size: 0.9rem; } }
+  @media only screen and (min-width: 75em) {
+    h3 {
+      font-size: 1.26563rem; } }
+
+h4 {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px 0; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    h4 {
+      font-size: 0.8rem; } }
+  @media only screen and (min-width: 75em) {
+    h4 {
+      font-size: 1.125rem; } }
+
+h5 {
+  font-size: 0.8125rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px 0; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    h5 {
+      font-size: 0.65rem; } }
+  @media only screen and (min-width: 75em) {
+    h5 {
+      font-size: 0.91406rem; } }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0 0; }
+  @media only screen and (min-width: 20em) and (max-width: 34.0em) {
+    p {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 75em) {
+    p {
+      font-size: 1.125rem; } }

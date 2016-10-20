@@ -1,0 +1,21 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "SaSS CSS Library",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "3.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss   css/main.css",
+    "watch-css" : "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Ariel Saldana",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-sass": "^2.3.2",
+    "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2"
+  }
+}
