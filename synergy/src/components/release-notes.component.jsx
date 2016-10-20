@@ -28,7 +28,7 @@ class ReleaseNotes extends React.Component {
 
 
     componentDidMount() {
-        this.ajax.get('/synergy/assets/release-notes.json').then(
+        this.ajax.get('http://www.ariel.io/synergy/assets/release-notes.json').then(
             (value) => {
                 this.setNotes(value.releaseNotes);
             },
