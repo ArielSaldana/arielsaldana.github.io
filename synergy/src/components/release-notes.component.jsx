@@ -28,7 +28,7 @@ class ReleaseNotes extends React.Component {
 
 
     componentDidMount() {
-        this.ajax.get('/release-notes.json').then(
+        this.ajax.get('/assets/release-notes.json').then(
             (value) => {
                 this.setNotes(value.releaseNotes);
             },
