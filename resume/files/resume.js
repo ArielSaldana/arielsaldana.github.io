@@ -47,7 +47,7 @@
     scale = d3.time.scale().domain([minTime, maxTime]).range([svgHeight - 10, 50]);
     items.forEach(function(item) {
       var size, x, x1, x2, xCenter, xOffset1, xOffset2, y1, y2, y3, _ref1, _ref2;
-      if (item.summary === 'University of Waterloo' || item.summary === 'Stanford University') {
+      if (item.summary === 'BMCC' || item.summary === 'NYU') {
         xOffset2 = 1;
       } else {
         xOffset2 = -1;
