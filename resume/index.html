@@ -1,0 +1,262 @@
+
+
+<html>
+  <head>
+    <!--
+    | Hey, code peeker! I bet you want to know how this works.
+    | The HTML file you see here is generated from a jade template
+    | and flatfile database by docpad.
+    | This file uses the hresume microformat. When the page loads,
+    | the JavaScript code loads the resume data from the page and
+    | adds an SVG element behind the text. Then d3.js is used to
+    | draw the visualization on the SVG.
+    | Since the HTML, CSS, and JavaScript are generated from
+    | Jade, SASS, and CoffeeScript respectively, none of what you
+    | see here is a good code sample. For that, see my github. 
+    -->
+    <title>Resume - Ariel Saldana, New York Software Engineer</title>
+    <link rel="profile" href="http://microformats.org/profile/hcalendar"/>
+    <link rel="profile" href="http://microformats.org/profile/hresume"/>
+    <link rel="profile" href="http://microformats.org/profile/hcard"/>
+    <link rel="stylesheet" type="text/css" href="./files/screen.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./files/resume.js"></script>
+  </head>
+  <body>
+    <div class="hresume">
+      <address class="contact vcard">
+        <h1 class="fn">Ariel Saldana</h1>
+        <ul>
+          <li class="adr"><span class="city">New York City</span></li>
+          <li><samp><a href="mailto:hello@ariel.io" class="email">hello@ariel.io</a></samp></li>
+          <li><samp><a href="http://ariel.io" class="homePageAddr">http://ariel.io/</a></samp></li>
+        </ul>
+      </address>
+      <div class="links">
+        <ul>
+          <li><a href="http://github.com/arielsaldana">github.com/arielsaldana</a></li>
+          <li><a href="http://linkedin.com/in/arielsaldana">linkedin.com/in/arielsaldana</a></li>
+        </ul>
+      </div>
+      <div class="sectionContainer">
+        <div class="sections left">
+          <div class="section experience">
+            <h2>Experience</h2>
+            <ol>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://www.urbanft.com/">Urban FT</a></h3>
+    </li>
+    <li class="location">New York, NY</li>
+    <li class="date"><abbr title="2015-03-01" class="dtstart">March 2015</abbr> &ndash; <abbr title="2016-12-01" class="dtend">present</abbr>
+    </li>
+    <li class="title">Software Engineer</li>
+    <li>Developing SaaS infrastructure as well as in house platforms.</li>
+    <li>Lead developer of the "WorkShop" Project as well as the Marketing Websites.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://www.urbanft.com/">Urban FT</a></h3>
+    </li>
+    <li class="location">New York, NY</li>
+    <li class="date"><abbr title="2014-09-01" class="dtstart">November 2014</abbr> &ndash; <abbr title="2015-02-30" class="dtend">Feb 2015</abbr>
+    </li>
+    <li class="title">Intern</li>
+    <li>Worked on developing a set of APIs and algorithms to aggregate venue information from multiple sources &amp; API Sign up process.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://bitaesthetics.com/">Digital Ocean</a></h3>
+    </li>
+    <li class="location">New York, NY</li>
+    <li class="date"><abbr title="2013-05-01" class="dtstart">July 2013</abbr> &ndash; <abbr title="2013-09-01" class="dtend">September 2013</abbr>
+    </li>
+    <li class="title">Intern</li>
+    <li>Consulted on data projects under the name Bit Aesthetics. Built things so cool I wish I could talk about them. (See <a href="http://linkedin.com/in/arielsaldana">LinkedIn endorsement</a>.)</li>
+  </ul>
+</li>
+
+            </ol>
+          </div>
+          <div class="section skills">
+            <h2>Skills</h2>
+            <ol>
+<li class="vevent">
+  <ul>
+    <li><p>I use my combined background in data science and software engineering to build platforms and services that deal with massive amounts of data.</p>
+<h3 style="margin: 10px 0;">Languages:</h3>
+<ul>
+    <li><strong>Java</strong> including the Hadoop family.</li>
+    <li><strong>JavaScript</strong> NodeJS, Angular 2, React, JQuery</li>
+    <li><strong>C++</strong></li>
+    <li><strong>Python</strong> including the PyData stack: scikit-learn, Pandas, numpy, etc.</li>
+    <li><strong>C#</strong></li>
+</ul></li>
+  </ul>
+</li>
+            </ol>
+          </div>
+        </div>
+        <div class="sections right">
+          <div class="section education">
+            <h2>Education</h2>
+            <ol>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://stanford.edu/">NYU</a></h3>
+    </li>
+    <li class="date"><abbr title="2013-09-01" class="dtstart">September 2016</abbr>  <abbr title="2016-08-19" class="dtend"></abbr>
+    </li>
+    <li class="location">New York, NY</li>
+    <li class="program">Computer Science</li>
+  </ul>
+</li>
+
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://stanford.edu/">BMCC</a></h3>
+    </li>
+    <li class="date"><abbr title="2012-09-01" class="dtstart">September 2012</abbr>
+    </li>
+    <li class="location">New York, NY</li>
+    <li class="program">Computer Science</li>
+  </ul>
+</li>
+<!--<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://www.leeds.ac.uk/">University of Leeds</a></h3>
+    </li>
+    <li class="date"><abbr title="2011-01-01" class="dtstart">January 2011</abbr> &ndash; <abbr title="2011-06-01" class="dtend">June 2011</abbr>
+    </li>
+    <li class="location">Leeds, England</li>
+    <li class="program">Academic Exchange</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="https://uwaterloo.ca/">University of Waterloo</a></h3>
+    </li>
+    <li class="date"><abbr title="2007-09-01" class="dtstart">September 2007</abbr> &ndash; <abbr title="2012-06-01" class="dtend">June 2012</abbr>
+    </li>
+    <li class="location">Waterloo, ON</li>
+    <li class="program">Bachelor of Mathematics</li>
+  </ul>
+</li>-->
+            </ol>
+          </div>
+          <div class="section awards">
+            <h2>Recognition</h2>
+            <ol>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://finovate.com/videos/finovatefall-2016-urban-ft/">Sucessful launch of product in Finovate</a></h3>
+    </li>
+    <li class="date"><abbr title="2016-09-01" class="dtstart">September 2016</abbr>
+    </li>
+    <li>Developed the 'Workshop". This includes both the back end APIs and the front end using a mix of Java, NodeJS, and Angular 2.0.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://www.boostmobilewallet.com/">BoostMobileWallet Launch</a></h3>
+    </li>
+    <li class="date"><abbr title="2016-09-21" class="dtstart">November 2016</abbr>
+    </li>
+    <li>Developed and Launched the marketing website for BoostMobileWallet.</li>
+  </ul>
+</li>
+            </ol>
+          </div>
+          <div class="section publications">
+            <h2>Selected Work</h2>
+            <ol>
+
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="https://github.com/ArielSaldana/Palringo-Bot-Engine">Palringo Bot</a></h3>
+    </li>
+    <li class="date"><abbr title="2014-03-01" class="dtstart">March 2014</abbr>
+    </li>
+    <li>Worked with staff in Palringo LTD to develop chat bots.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="http://engineering.nyu.edu/files/NYU-Poly_2012_Summer_Research_Abstracts_screen.pdf">NYU Robotics research</a></h3>
+    </li>
+    <li class="date"><abbr title="2012-07-01" class="dtstart">July 2012</abbr>
+    </li>
+    <li>Summer research Program.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="https://www.facebook.com/note.php?note_id=469716398919">Pre College computer science courses</a></h3>
+    </li>
+    <li class="date"><abbr title="2011-12-13" class="dtstart">December 2011</abbr>
+    </li>
+    <li>End project to Create a visualization of a sample of ten million friend pairs to construct a world map.</li>
+  </ul>
+</li>
+            </ol>
+          </div>
+          <div class="section opensource">
+            <h2>Open Source</h2>
+            <ol>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="https://github.com/real/nodesoy"><span>github.com/real/</span>nodesoy</a></h3>
+    </li>
+    <li>Utility for working with Closure Templates, aka Soy, from with a node.js application.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="https://github.com/ArielSaldana/pan"><span>github.com/ArielSaldana/</span>pan</a></h3>
+    </li>
+    <li>Framework to help develop well structured web apps.</li>
+  </ul>
+</li>
+<li class="vevent">
+  <ul>
+    <li class="summary">
+      <h3><a href="https://github.com/ArielSaldana/synergy-pandas"><span>github.com/ArielSaldana/</span>synergy</a></h3>
+    </li>
+    <li>Library to help develop medium to large web apps using React.</li>
+  </ul>
+</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1371483-2']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</html>

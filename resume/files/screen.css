@@ -1,0 +1,289 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: Alef, sans-serif;
+  color: #333;
+}
+
+address, cite {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+address {
+  margin-left: 50px;
+  margin-top: 40px;
+  float: left;
+}
+
+div.links {
+  float: right;
+  margin-right: 50px;
+  margin-top: 40px;
+  text-align: right;
+}
+
+svg text {
+  text-anchor: left;
+  dominant-baseline: middle;
+}
+
+svg rect.awards {
+  fill: #080;
+}
+
+svg rect.publications {
+  fill: #808;
+}
+
+svg line.awards, svg line.publications {
+  stroke: #aaa;
+  stroke-width: 2;
+  opacity: 0.4;
+}
+
+svg line.experience {
+  stroke: #088;
+  stroke-width: 2;
+}
+
+svg line.education {
+  stroke: #800;
+  stroke-width: 2;
+}
+
+svg polygon {
+  fill: #aaa;
+  opacity: 0.2;
+}
+
+div.hresume {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+div.sectionContainer {
+  position: relative;
+  clear: both;
+}
+
+div.sections {
+  margin-bottom: 30px;
+}
+
+.sections.left {
+  float: left;
+}
+
+.sections.right {
+  float: right;
+}
+
+div.section {
+  width: 450px;
+  position: relative;
+  clear: both;
+  padding-top: 30px;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 1.3em;
+  padding: 10px 0;
+  position: relative;
+  top: 4px;
+  color: #aaa;
+  line-height: 0;
+  clear: both;
+}
+
+.sections.left {
+  padding-left: 50px;
+}
+.sections.left h2 {
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-align: right;
+  right: 470px;
+}
+.sections.left li.summary {
+  float: left;
+}
+.sections.left li.date {
+  float: right;
+}
+.sections.left li.location {
+  float: left;
+}
+
+.sections.right {
+  padding-right: 50px;
+}
+.sections.right h2 {
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-align: left;
+  left: 470px;
+  float: left;
+}
+.sections.right li.summary {
+  float: right;
+  text-align: right;
+}
+.sections.right li.date {
+  float: left;
+}
+.sections.right li.location {
+  float: right;
+}
+.sections.right li.program {
+  float: left;
+  clear: none;
+}
+
+li.vevent, li.item {
+  padding-top: 1.4em;
+}
+li.vevent:first-child, li.item:first-child {
+  padding-top: 0;
+}
+
+ul li {
+  line-height: 1.3em;
+}
+
+.experience h3 a {
+  color: #088;
+}
+
+.education h3 a {
+  color: #800;
+}
+
+.awards h3 a {
+  color: #080;
+}
+
+.publications h3 a {
+  color: #808;
+}
+
+.opensource h3 a {
+  color: #B40;
+}
+.opensource h3 a span {
+  color: #aaa;
+}
+
+ol, ul {
+  list-style: none;
+  padding-left: 0;
+}
+ol li.date, ul li.date {
+  color: #888;
+  font-size: 85%;
+  clear: none;
+  line-height: 1.7em;
+}
+ol li.location, ul li.location {
+  color: #888;
+  font-size: 85%;
+  float: left;
+}
+ol li.program, ul li.program {
+  font-weight: bold;
+  line-height: 1.7em;
+}
+ol li, ul li {
+  clear: both;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+ol .title, ul .title {
+  font-weight: bold;
+  clear: both;
+  line-height: 1.7em;
+}
+
+strong {
+  font-weight: bold;
+}
