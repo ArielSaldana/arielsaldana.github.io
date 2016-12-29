@@ -277,7 +277,13 @@ ol li, ul li {
   clear: both;
   font-size: 14px;
   line-height: 1.5em;
+  margin-bottom:10px;
 }
+
+ol li.marg, ul li.marg {
+  margin-bottom:10px;
+}
+
 ol .title, ul .title {
   font-weight: bold;
   clear: both;
