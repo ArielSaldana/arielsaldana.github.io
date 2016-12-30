@@ -6,8 +6,8 @@ url: http://ahhriel.com
 
 permalink: /:categories/:year/:month/:day/:title
 
-markdown: redcarpet
-redcarpet:
+markdown: kramdown
+kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "disable_indented_code_blocks", "autolink", "tables", "with_toc_data"]
 
 
