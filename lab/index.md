@@ -1,6 +1,6 @@
 ---
 
-title: ahhriel lab
+title: Ariel Saldana lab
 category: lab
 layout: index
 
