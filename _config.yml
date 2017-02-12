@@ -1,8 +1,8 @@
 # Config -----------------------------
 
-name: ahhriel
-description: Blog about ahhriel's work and CSS doodles
-url: http://ahhriel.com
+name: Ariel Saldana
+description: Blog about Ariel Saldana's work and CSS doodles
+url: http://www.ariel.io
 
 permalink: /:categories/:year/:month/:day/:title
 

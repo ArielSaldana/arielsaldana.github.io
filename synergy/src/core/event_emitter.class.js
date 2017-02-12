@@ -1,6 +1,6 @@
 /**
  * @class  Event Emmiter
- * @author Ariel Saldana / http://ahhriel.com
+ * @author Ariel Saldana / http://www.ariel.io
  */
 
 class EventEmitter {

@@ -1,6 +1,6 @@
 /**
  * @class  Router
- * @author Ariel Saldana / http://ahhriel.com
+ * @author Ariel Saldana / http://www.ariel.io
  * @requires history.js
  */
 

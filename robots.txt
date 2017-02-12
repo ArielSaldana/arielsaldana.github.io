@@ -1,3 +1,3 @@
 User-Agent: *
 Disallow: 
-sitemap: http://ahhriel.com/sitemap.xml
+sitemap: http://www.ariel.io/sitemap.xml

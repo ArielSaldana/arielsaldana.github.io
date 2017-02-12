@@ -6,7 +6,7 @@ keywords: app,mobile,opengl,development,unreal,engine,4,game,mobile,platform
 tags: [app, mobile, opengl, development]
 category: projects
 layout: post
-img: http://ahhriel.com/img/posts/moba-main.jpg
+img: http://www.ariel.io/img/posts/moba-main.jpg
 
 ---
 

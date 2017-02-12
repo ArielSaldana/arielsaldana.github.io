@@ -2,15 +2,13 @@
 
 layout: page-cols
 nav: about
-title: Ariel Saldana - About | ahhriel 
+title: Ariel Saldana - About | Ariel Saldana 
 
 ---
 
 <div class="page-col">{% capture m %}
 
-![ahhriel about](/img/ariel-saldana-about.jpg)
-
-__ahhriel__? Almost.. Ariel Saldana; which is my name, + the way people love to pronounce it = __ahhriel__.
+![Ariel Saldana about](/img/ariel-saldana-about.jpg)
 
 __Bio__: I'm a Software Engineer / Front-end Developer born in the Greater Antilles island Dominican Rebublic and currently reside in New York, NY. I have a passion for developing applications that are efficient and look beautiful. 
 
@@ -29,6 +27,6 @@ __I ♥__: Riding dirt bikes, coding, designing, art, going on adventures, and w
 ## Contact
 
 * Tweet on [Twitter](http://twitter.com/yerariel)
-* Email to [ariel@ahhriel.com](mailto:ariel@ahhriel.com)
+* Email to [ariel@www.ariel.io](mailto:ariel@www.ariel.io)
 
 {% endcapture %}{{ m | markdownify }}</div>
