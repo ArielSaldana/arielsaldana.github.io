@@ -4,7 +4,7 @@ name: Ariel Saldana
 description: Blog about Ariel Saldana's work and CSS doodles
 url: http://www.ariel.io
 
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title/
 
 markdown: kramdown
 kramdown:
