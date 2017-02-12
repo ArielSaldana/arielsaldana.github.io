@@ -26,7 +26,7 @@ __I ♥__: Riding dirt bikes, coding, designing, art, going on adventures, and w
 
 ## Contact
 
-* Tweet on [Twitter](http://twitter.com/yerariel)
-* Email to [ariel@www.ariel.io](mailto:ariel@www.ariel.io)
+* Tweet on [Twitter](http://twitter.com/ahhrl)
+* Email to [hello@ariel.io](mailto:hello@ariel.io)
 
 {% endcapture %}{{ m | markdownify }}</div>
