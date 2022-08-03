@@ -8,8 +8,6 @@ title: Ariel Saldana - About | Ariel Saldana
 
 <div class="page-col">{% capture m %}
 
-![Ariel Saldana about](/img/ariel-saldana-about.jpg)
-
 __Bio__: I'm a Software Engineer / Front-end Developer born in the Greater Antilles island Dominican Rebublic and currently reside in New York, NY. I have a passion for developing applications that are efficient and look beautiful. 
 
 
