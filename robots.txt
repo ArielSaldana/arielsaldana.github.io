@@ -1,3 +1,0 @@
-User-Agent: *
-Disallow: 
-sitemap: http://www.ariel.io/sitemap.xml
