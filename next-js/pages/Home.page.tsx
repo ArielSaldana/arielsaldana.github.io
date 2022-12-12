@@ -5,18 +5,22 @@ import Hero from "../components/hero/Hero";
 import LocomotiveScroll from "locomotive-scroll";
 import {useContext, useEffect, useState} from "react";
 import {SmoothScrollContext, SmoothScrollProvider} from "../contexts/SmoothScroll";
+import {Marquee} from "../components/marquee/Marquee";
 
 export default function Home() {
     const { scroll } = useContext(SmoothScrollContext)
     return (
-        <div>
+        <div data-scroll-section>
             <Head>
                 <title>Ariel Saldana | Home</title>
                 <meta name="description" content="Ariel Saldana. Software Engineer at Goldman Sachs." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <h2 className="orange-halo">Ariel Saldana</h2>
+            <Marquee options={{ duration: 1000 }}>
+                <h2 className="orange-halo">Ariel Saldana</h2>
+            </Marquee>
+
 
             <main>
                 <Hero></Hero>

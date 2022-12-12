@@ -17,13 +17,14 @@ interface Props {
 }
 
 // @ts-ignore
-export const SmoothScrollProvider: FC<Props> = ({ children, ...options }) => {
+export const SmoothScrollProvider: FC<Props> = ({ children, options }) => {
     const [scroll, setScroll] = useState<LocomotiveScroll | null>(null)
 
     useEffect(() => {
         if (!scroll) {
             ;(async () => {
                 try {
+                    console.log(options);
                     const LocomotiveScroll = (await import('locomotive-scroll')).default
                     setScroll(
                         new LocomotiveScroll({
@@ -42,7 +43,9 @@ export const SmoothScrollProvider: FC<Props> = ({ children, ...options }) => {
         }
     }, [scroll]) // eslint-disable-line react-hooks/exhaustive-deps
 
-    return <SmoothScrollContext.Provider value={{ scroll }}>{children}</SmoothScrollContext.Provider>
+    return (
+        <SmoothScrollContext.Provider value={{ scroll }}>{children}</SmoothScrollContext.Provider>
+    )
 }
 
 SmoothScrollContext.displayName = 'SmoothScrollContext'

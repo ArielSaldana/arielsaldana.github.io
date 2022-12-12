@@ -5,7 +5,8 @@ import test from "node:test";
 
 export default function Hero() {
     const greetings = "Full Stack Software Engineer @GoldmanSachs ☻";
-    const possibleLetters = "abcdefghijklmnopqrstuvwzyxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789☻@ ";
+    // const possibleLetters = "abcdefghijklmnopqrstuvwzyxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789☻@ ";
+    const possibleLetters = greetings;
 
     function getRandomInt(max: number) {
         return Math.floor(Math.random() * max);
