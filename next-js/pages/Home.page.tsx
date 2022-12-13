@@ -2,7 +2,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Terminal from "../components/terminal/Terminal";
 import Hero from "../components/hero/Hero";
-import LocomotiveScroll from "locomotive-scroll";
 import {useContext, useEffect, useState} from "react";
 import {SmoothScrollContext, SmoothScrollProvider} from "../contexts/SmoothScroll";
 import {Marquee} from "../components/marquee/Marquee";
@@ -17,10 +16,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Marquee options={{ duration: 1000 }}>
+            <Marquee options={{ duration: 3000, numberOfItems: 5 }}>
                 <h2 className="orange-halo">Ariel Saldana</h2>
             </Marquee>
-
 
             <main>
                 <Hero></Hero>

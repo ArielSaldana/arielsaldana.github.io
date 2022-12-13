@@ -1,63 +1,61 @@
-import {FC, ReactNode, useCallback, useEffect, useRef, useState} from "react";
+import {FC, useEffect, useLayoutEffect, useRef, useState} from "react";
 import styles from "./Marquee.module.scss"
+import {MarqueeProps} from "./MarqueeProps";
 
-type Options = {
-    duration: number
-}
+export const Marquee: FC<MarqueeProps> = ({ children, options}) => {
+    const [marqueeItemWidth, setMarqueeItemWidth] = useState(0);
+    const [marqueeItemPosition, setMarqueeItemPosition] = useState(0);
+    const [marqueeItemPositionMovement, setMarqueeItemPositionMovement] = useState(0);
+    const requestRef: any = useRef();
+    const marqueeElement = useRef(null);
 
-type Props = {
-    options: Options,
-    children: ReactNode
-};
-
-export const Marquee: FC<Props> = ({ children, options}) => {
-    const [marqueePosition, setMarqueePosition] = useState(0);
-    const [multiplier, setMultiplier] = useState(0);
-
-    let requestRef: any = useRef();
-    let previousTimeRef: any = useRef();
-
-    const animate = (time: number) =>  {
-        if (previousTimeRef.current === undefined) {
-            const fps = 60;
-            const timeInSeconds = options.duration / 1000;
-            const totalFrames = timeInSeconds * 60;
-            const mult = (fps / totalFrames) / 10;
-            setMultiplier(mult);
-        }
-        if (previousTimeRef.current !== undefined) {
-            const deltaTime = time - previousTimeRef.current;
-            setMarqueePosition(prevCount => (prevCount + deltaTime * multiplier) % 100);
-        }
-        previousTimeRef.current = time;
+    const animate = () =>  {
+        setMarqueeItemPosition(prevCount => (
+            (prevCount + marqueeItemPositionMovement) % marqueeItemWidth)
+        );
         requestRef.current = requestAnimationFrame(animate);
     }
 
+    useLayoutEffect(() => {
+        if (marqueeElement.current) {
+            setMarqueeItemWidth(
+                // todo: recalculate this on resize.
+                (marqueeElement.current["offsetWidth"] / options.numberOfItems )
+            );
+        }
+    }, [options.numberOfItems]);
+
     useEffect(() => {
-        requestRef.current = requestAnimationFrame(animate);
-        return () => cancelAnimationFrame(requestRef.current);
-    }, [multiplier]);
+        if (marqueeItemWidth !== 0) {
+            const fps = 60;
+            const timeInSeconds = options.duration / 1000;
+            setMarqueeItemPositionMovement(marqueeItemWidth / timeInSeconds / fps)
+        }
+
+    }, [marqueeItemWidth, options.duration]);
+
+    useEffect(() => {
+        if (marqueeItemPositionMovement !== 0) {
+            requestRef.current = requestAnimationFrame(animate);
+            return () => cancelAnimationFrame(requestRef.current);
+        }
+    }, [marqueeItemPositionMovement]);
+
+    const getMarqueeContent = (numberOfItems: number) => {
+        let content = []
+        for (let i = 0; i < numberOfItems; i++) {
+            content.push(
+                <div key={i} className={styles.item} style={{ transform: `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -${marqueeItemPosition}, 0, 0, 1)` }}>
+                    {children}
+                </div>
+            )
+        }
+        return content
+    }
 
     return (
-        <div className={styles.marquee}>
-            <div className={styles.item} style={{  transform: `translate(-${marqueePosition}%, 0%) translate3d(0px, 0px, 0px` }}>
-                {children} {marqueePosition}
-            </div>
-            <div className={styles.item} style={{  transform: `translate(-${marqueePosition}%, 0%) translate3d(0px, 0px, 0px` }}>
-                {children} {marqueePosition}
-            </div>
-            <div className={styles.item} style={{  transform: `translate(-${marqueePosition}%, 0%) translate3d(0px, 0px, 0px` }}>
-                {children} {marqueePosition}
-            </div>
-            <div className={styles.item} style={{  transform: `translate(-${marqueePosition}%, 0%) translate3d(0px, 0px, 0px` }}>
-                {children} {marqueePosition}
-            </div>
-            <div className={styles.item} style={{  transform: `translate(-${marqueePosition}%, 0%) translate3d(0px, 0px, 0px` }}>
-                {children} {marqueePosition}
-            </div>
-            <div className={styles.item} style={{  transform: `translate(-${marqueePosition}%, 0%) translate3d(0px, 0px, 0px` }}>
-                {children} {marqueePosition}
-            </div>
+        <div ref={marqueeElement} className={styles.marquee}>
+            {getMarqueeContent(options.numberOfItems)}
         </div>
     )
 }
