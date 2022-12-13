@@ -1,0 +1,16 @@
+.marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 120%;
+}
+
+.marquee .item {
+  //display: inline-block;
+  //margin-right: 60px;
+  width:55%;
+  padding-right: 0.5ch;
+  white-space: nowrap;
+  flex: 2 1 auto;
+}
