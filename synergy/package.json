@@ -14,7 +14,7 @@
     "gulp-uglify":"2.0.0",
     "gulp-watch":"4.3.9",
     "babel-plugin-transform-react-jsx" : "*",
-    "express" : "4.14.0"
+    "express" : "4.19.2"
   },
   "scripts": {
     "compile": "node node_modules/gulp/bin/gulp"
